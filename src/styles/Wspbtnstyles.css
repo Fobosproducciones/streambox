@@ -1,0 +1,25 @@
+.wsp-a {
+  display: block;
+  min-width: 100px;
+}
+
+.wsp-img {
+  bottom: 140px;
+  min-width: 100px;
+  position: fixed;
+  right: 10px;
+}
+
+.MuiSvgIcon-fontSizeLarge {
+  font-size: 3.1875rem !important;
+}
+
+@media (max-width: 426px) {
+  .wsp-img {
+    right: 0;
+    bottom: 90px;
+  }
+  .MuiSvgIcon-fontSizeLarge {
+    font-size: 2rem !important;
+  }
+}

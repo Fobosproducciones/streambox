@@ -1,0 +1,51 @@
+.featured-poster:hover {
+  width: 77%;
+  box-shadow: 1px 1px 18px 1px#e91e63;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.sc-EHOje {
+  padding-top: 20px;
+  padding-left: 40px;
+}
+.carousel-container {
+  width: 60%;
+}
+
+.kVtMtA {
+  background-color: #eeeeee;
+}
+.bhRnqO {
+  background-color: #eeeeee;
+}
+
+@media (max-width: 700px) and (orientation: landscape) {
+  .carousel-container {
+    width: 600px;
+    height: 100px;
+  }
+  .featured-poster {
+    width: 30%;
+  }
+}
+
+@media (max-width: 426px) {
+  .carousel-container {
+    width: 400px;
+    height: 200px;
+  }
+  .featured-poster {
+    width: 50%;
+  }
+}
+
+@media (max-width: 375px) {
+  .carousel-container {
+    width: 400px;
+    height: 200px;
+  }
+  .featured-poster {
+    width: 70%;
+  }
+}

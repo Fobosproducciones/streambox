@@ -1,0 +1,21 @@
+.pro-sidebar {
+  position: absolute;
+  height: fit-content;
+}
+
+small {
+  opacity: 0.5;
+  text-align: end;
+}
+
+.live {
+  opacity: 1;
+  color: red;
+}
+
+.pro-arrow {
+  margin-left: -160px;
+}
+.pro-sidebar > .pro-sidebar-inner {
+  background: none;
+}
