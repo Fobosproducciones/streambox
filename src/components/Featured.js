@@ -11,7 +11,7 @@ const Featured = (props) => {
       <Grid container justify="center" alignItems="center">
         <div className="carousel-container">
           <Carousel
-            cols={6}
+            cols={12}
             rows={1}
             gap={10}
             responsiveLayout={[

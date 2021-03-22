@@ -11,9 +11,9 @@
 .block:before,
 .block:after {
   content: "";
-  opacity: 0.5;
+  opacity: 0.8;
   position: absolute;
-  background: linear-gradient(45deg, #1565c0, #e91e63, #6a1b9a);
+  background: linear-gradient(45deg, white, rgb(77, 77, 77), grey);
   background-size: 400%;
   width: 100%;
   height: 100%;
@@ -51,4 +51,8 @@
   .block:after {
     background: none;
   }
+}
+
+.MuiTypography-body1 {
+  font-size: 0.7rem !important;
 }

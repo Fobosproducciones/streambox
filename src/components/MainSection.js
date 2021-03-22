@@ -10,7 +10,8 @@ import Featured from "./Featured";
 const MainSection = () => {
   const [movies, setMovies] = useState([]);
   let movieArray = [];
-  let ArrayFinal = [];
+  let movieArray2 = [];
+  let finalArray = [];
 
   const getMovieRequest = async () => {
     const url = "http://www.omdbapi.com/?apikey=3e0a45aa&s=space";
@@ -21,8 +22,13 @@ const MainSection = () => {
     const url2 = "http://www.omdbapi.com/?apikey=3e0a45aa&s=space&page=2";
     const response2 = await fetch(url2);
     const responseJson2 = await response2.json();
-    ArrayFinal = movieArray.concat(responseJson2.Search);
-    setMovies(ArrayFinal);
+    movieArray2 = movieArray.concat(responseJson2.Search);
+
+    const url3 = "http://www.omdbapi.com/?apikey=3e0a45aa&s=space&page=3";
+    const response3 = await fetch(url3);
+    const responseJson3 = await response3.json();
+    finalArray = movieArray2.concat(responseJson3.Search);
+    setMovies(finalArray);
   };
 
   useEffect(() => {

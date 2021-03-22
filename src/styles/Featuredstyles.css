@@ -10,7 +10,11 @@
   padding-left: 40px;
 }
 .carousel-container {
-  width: 60%;
+  width: 100%;
+}
+
+.featured-poster {
+  width: 80%;
 }
 
 .kVtMtA {

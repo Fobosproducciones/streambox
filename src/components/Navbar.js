@@ -59,7 +59,7 @@ const Navbar = () => {
             StreamBox
           </Typography>
 
-          <a href="assets\Streambox.pdf" download>
+          <a href="public\Streambox.pdf" download>
             <Button
               variant="outlined"
               className="pdfbutton"
