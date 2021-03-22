@@ -1,6 +1,6 @@
 .featured-poster:hover {
   width: 77%;
-  box-shadow: 1px 1px 18px 1px#e91e63;
+  box-shadow: 1px 1px 18px 1px#eeeeeeb7;
   transition: all 0.2s;
   cursor: pointer;
 }
