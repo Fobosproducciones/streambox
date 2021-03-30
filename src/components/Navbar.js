@@ -15,6 +15,8 @@ import Alert from "@material-ui/lab/Alert";
 import { useHistory } from "react-router-dom";
 import firebase from "firebase/app";
 import "firebase/auth";
+import useUsers from "../hooks/useUsers";
+import Avatar from "./Avatar";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -31,6 +33,7 @@ const Navbar = () => {
   const history = useHistory();
   const classes = useStyles();
   const [open, setOpen] = useState(false);
+  const user = useUsers();
 
   const handleClick = () => {
     setOpen(true);
@@ -58,7 +61,7 @@ const Navbar = () => {
           <Typography variant="h6" className={classes.title} id="glitch">
             StreamBox
           </Typography>
-
+          {user && <Avatar src={user.avatar} alt={user.username}></Avatar>}
           <a href="public\Streambox.pdf" download>
             <Button
               variant="outlined"

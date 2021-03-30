@@ -1,6 +1,7 @@
 .pro-sidebar {
   position: absolute;
   height: fit-content;
+  top: 100px;
 }
 
 small {
